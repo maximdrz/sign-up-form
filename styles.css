@@ -1,0 +1,119 @@
+:root {
+    --bg-color: rgb(0, 31, 46);
+    --main-font-color: rgb(0, 209, 216);
+    --form-bg-color: rgb(0, 63, 71);
+    font-family: 'Fira Code';
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: horizontal;
+    width: 100dvw;
+    height: 100dvh;
+}
+
+.leftSide {
+    background-image: url(./image.jpg);
+    background-size: contain;
+    width: 40vw;
+}
+.rightSide {
+    width: 60vw;
+    background-color: var(--bg-color);
+}
+
+.upperPara {
+    font-family: inherit;
+    color: var(--main-font-color);
+    margin: 10vw;
+}
+
+.convincer {
+    font-family: inherit;
+    color: rgb(255, 160, 50);
+    font-size: 25px;
+    margin-top: -5vw;
+    margin-left: 10vw;
+    margin-bottom: 5vw;
+}
+
+form {
+    background-image: linear-gradient(var(--form-bg-color),
+                         var(--bg-color));
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 100%;
+}
+legend {
+    color: white;
+    margin: 2vh;
+}
+input {
+    display: block;
+    margin-left: 2vw;
+    height: 3vh;
+    font-size: 2vh;
+}
+label {
+    font-weight:500;
+    font-size: 0.89rem;
+    font-family: 'Quicksand';
+    margin-left: 2vw;
+    display: block;
+    color:rgb(104, 104, 104)
+}
+.formrow {
+    margin: 1vh;
+    display: flex;
+    justify-content: space-around;
+}
+.labNField {
+    display: flex;
+    flex-direction: column;
+}
+button {
+    margin-bottom: 2vh;
+    margin-top: 5vh;
+    font-family: 'Quicksand';
+    font-size: 20px;
+    height: 45px; 
+    width: 230px;
+    border-radius: 5px;   
+}
+button:hover {
+    box-shadow: 0 0px 10px rgb(255, 160, 50);
+    color:rgb(0, 0, 0);
+    border: none;
+    background-color:rgb(255, 160, 50);
+}
+button:active{
+    background-color:rgba(255, 159, 50, 0.658);
+    box-shadow: 0 0px 10px rgba(255, 159, 50, 0.664);
+
+}
+.already {
+    font-weight:500;
+    font-size: 1rem;
+    font-family: 'Quicksand';
+    display: block;
+    color:rgb(104, 104, 104)
+}
+.rest {
+    background-color: var(--form-bg-color);
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: var(--main-font-color);
+    text-decoration: none;
+}
+
+
